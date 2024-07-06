@@ -1,0 +1,36 @@
+body {
+    --sb-thumb-color: rgba(211, 29, 135, 0.8);
+    --sb-track-color: linear-gradient(rgb(240, 134, 12), rgb(241, 52, 27), rgb(252, 203, 71));
+    --sb-size: 8px;
+  }
+  
+  body::-webkit-scrollbar, 
+  .basket-center::-webkit-scrollbar, 
+  .about-scroll::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track,
+  .basket-center::-webkit-scrollbar-track,
+  .about-scroll::-webkit-scrollbar-track  {
+    background: var(--sb-track-color);
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb,
+  .basket-center::-webkit-scrollbar-thumb,
+  .about-scroll::-webkit-scrollbar-thumb {
+      background: var(--sb-thumb-color);
+    border-radius: 5px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body,
+    .about-scroll,
+    .basket-center{
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+  

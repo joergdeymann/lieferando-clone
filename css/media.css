@@ -1,0 +1,35 @@
+@media(max-width: 850px) {
+    .right {
+        display: none;
+    }
+    .inner-article>img,
+    .headline  
+     {
+        display: none;
+    }
+    
+    .mobile-buttons {
+        display: flex;
+    }
+
+    .free-basket {
+        position: fixed;
+        top: 0px;
+        bottom:0px;
+        left: 0px;
+        right: 0px;
+        max-width: 600px;
+        min-width: 200px;
+        width: 90%;
+        height: 100vh;
+        background-color: rgba(255,255,255,0.9);
+        box-sizing: border-box;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .basket-nav>a {
+        visibility: visible;
+    }
+
+}

@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    width:30%; 
+}
+
+.right {
+    display: flex; 
+    flex-direction: column;
+
+    box-shadow: inset 2px 0px 4px rgba(0,0,0,0.3);
+    padding: 5px;
+    width: 10%;
+    min-width: 300px;
+}
+
+.content-company {
+    margin-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+}
+

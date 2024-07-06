@@ -1,0 +1,72 @@
+.impressum-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 24px;
+    word-wrap: break-word;
+    word-break: break-word;
+    line-height: 20px;
+    max-width:64ch
+}
+
+.impressum-section h1 {
+    font-size: 24px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
+
+.impressum-section h2 {
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 0;
+    padding:0;
+    padding-top: 8px;
+}
+
+.impressum-section h3 {
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 0;
+    padding:0;
+    padding-top: 8px;
+}
+
+.impressum-section p,.impressum-section li {
+    text-align:justify;
+}
+
+.impressum-section a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.4);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.impressum-section a:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+.impressum-section th {
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.impressum-sources p {
+    padding: 0;
+    margin: 0;
+    margin-top: 1px;
+    
+}
+.impressum-sources h2 {
+    margin-top: 8px;
+}
+
+.impressum-sources ul {
+    margin-top: 0px;
+    padding-left: 16px;
+}
+
+.impressum-sources li {
+    margin-bottom: 4px;
+}
+

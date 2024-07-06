@@ -1,0 +1,9 @@
+.company-impressum {
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.company-impressum  a {
+    color: rgba(0,0,0,0.9);
+    cursor: pointer;
+}

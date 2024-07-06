@@ -1,0 +1,44 @@
+.mobile-buttons {
+    box-sizing: border-box;
+    position: sticky;
+    
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    bottom:0;
+    background-color: var(--bg-color);
+}
+
+#bottom-button {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border;
+}
+
+#bottom-button .pay {
+    margin-top: 0px;
+}
+
+.mobile-buttons a {
+    background: orange;
+    width: 200px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-buttons a  img {
+    width: 32px;
+    height: auto;
+}
+
+
+.mobile-buttons a:hover {
+    filter:brightness(1.1);
+}

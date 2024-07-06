@@ -1,0 +1,60 @@
+.pushbutton-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    position:relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:2px;
+    border-radius: 21px;
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.pushbutton-content,.pushbutton-slider {
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    height: 40px;
+    width: 120px;
+
+    border-radius: 20px;
+}
+
+.pushbutton-content {
+    padding: 16px;
+    gap:8px;
+    z-index:1;
+}
+
+.pushbutton-content:hover {
+    background-color: rgba(0,0,0,0.03);
+}
+
+.pushbutton-slider {
+    position: absolute;
+    top:2px;
+    left:2px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    background-color: rgba(255,255,255,0.99);
+    width: calc(50% - 4px);
+    transition: 200ms ease-in-out;
+    z-index:0;
+}
+
+.pushbutton-slider:hover {
+    transform: translateX(calc(100%));
+    transition: 200ms ease-in-out;
+}
+
+.pushbutton-content img {
+    height: 18px;
+}
+
+.pushbutton-slide-right {
+    transform: translateX(calc(100%));
+}

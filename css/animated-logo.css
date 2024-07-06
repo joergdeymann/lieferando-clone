@@ -1,0 +1,27 @@
+.company-logo {
+    width:20vw;
+    height: 20vw; 
+    border: 2px solid rgba(200,200,200,0.6);
+    margin-top: -13vw;
+    margin-bottom: -13vw;
+}
+
+.animate-logo {
+    animation: company-logo 3s ease-out;
+}
+
+@keyframes company-logo {
+    from 
+    {
+        transform:
+            translateX(-100vw)
+            rotate(-520deg);
+    }
+    to 
+    {
+        transform:
+            translateX(0)
+            rotate(0);
+    }
+
+}

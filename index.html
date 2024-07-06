@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liefero</title>
+    <link rel="icon" href="./img/logo-header.svg" sizes="48x48" type="image/svg+xml">
+
+
+    <link rel="stylesheet" href="./css/std.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/content-company.css">
+    <link rel="stylesheet" href="./css/menu-choice.css">
+    <link rel="stylesheet" href="./css/article.css">
+    <link rel="stylesheet" href="./css/pushbutton.css">
+    <link rel="stylesheet" href="./css/animated-logo.css">
+    <link rel="stylesheet" href="./css/animated-menu.css">
+    <link rel="stylesheet" href="./css/searchbar.css">
+
+    <link rel="stylesheet" href="./css/basket-right.css">
+    <link rel="stylesheet" href="./css/company-impressum.css">
+
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/gradient-underline.css">
+    <link rel="stylesheet" href="./css/mobile-button.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/impressum.css">
+    
+    
+    <script src="./script.js"></script>
+    <script src="./js/stdio.js"></script>
+    <script src="./js/animateLogo.js"></script>
+    <script src="./js/scrollAndMouse.js"></script>
+    <script src="./js/pushbutton.js"></script>
+
+    <script src="./js/address.js"></script>
+    <script src="./js/article.js"></script>
+    <script src="./js/company.js"></script>
+    <script src="./js/customer.js"></script>
+    <script src="./js/category.js"></script>
+    <script src="./js/basket.js"></script>
+    <script src="./js/animated-menu.js"></script>
+
+    <script src="./js/data-company.js"></script>
+    <script src="./js/data-article.js"></script>
+    <script src="./js/data-article-company0.js"></script>
+    <script src="./js/data-article-company1.js"></script>
+    <script src="./js/data-article.js"></script>
+    <script src="./js/data-category.js"></script>
+    <script src="./js/data-evaluation.js"></script>
+    <script src="./js/data-customer.js"></script>
+
+    <script src="./js/renderCompany.js"></script>
+    <script src="./js/renderCategory.js"></script>
+    <script src="./js/renderArticle.js"></script>
+    <script src="./js/renderCompanyImpressum.js"></script>
+    <script src="./js/quick-render.js"></script>
+    <script src="./js/renderBasket.js"></script>
+    <script src="./js/renderBasketArticle.js"></script>
+    <script src="./js/listener.js"></script>
+ 
+    <script src="./js/renderAbout.js"></script>
+    <script src="./js/renderEvaluation.js"></script>
+    <script src="./js/like.js"></script>
+    <script src="./js/animatedWindow.js"></script>
+    <script src="./js/articleDetail.js"></script>
+    <script src="./js/renderOrder.js"></script>
+    <script src="./js/order.js"></script>
+    <script src="./js/renderShop.js"></script>
+    <script src="./js/freeBasket.js"></script>
+    <script src="./js/renderOverlay.js"></script>
+    <script src="./js/renderImpressum.js"></script>
+    <script src="./js/renderDatenschutz.js"></script>
+</head>
+
+<body onload="init()">
+    <div id="window"></div>
+
+    <header><div class="max-width">
+        <div class="logoarea">
+            <div class="shop-link" onclick="renderShops();"><a>&lt;</a></div>
+            <img src="./img/logo-header.svg">Liefero
+
+        </div>
+
+        <div class="headline">Speisekarte</div>
+
+        <div class="menuarea">
+            <img id="header-flag" class="circle-image height32" alt="Country" src="./img/flag/flag49.svg">
+            <div class="thee-bars">&nbsp;</div>
+        </div>
+    </div></header>
+
+    <div class="content max-width">
+        <div id="left" class="left"></div>
+
+        <div id="right" class="right free-basket"><div class="basket-right" id="basket-right">
+            <img class="size24" src="./img/heart_white.svg">
+            <h2>Warenkorb</h2>
+            <div class="pushbutton-container">
+                <div class="pushbutton-slider"></div>
+
+                <div onclick="pushbuttonSlideLeft(this);basketSetDelivery(0);" class="pushbutton-content">
+                    <img src="./img/star-full.svg">
+                    <div><b>Lieferung</b> ab 18:15</div>
+                </div>
+
+                <div onclick="pushbuttonSlideRight(this);basketSetDelivery(1);" class="pushbutton-content">
+                    <img src="./img/star-full.svg">
+                    <div><b>Abholung</b> ab 17:45</div>
+                </div>
+            </div>
+            <br><br>
+            <div class="itemOfBasket">
+                <img class="size24" src="./img/clock.svg">
+
+                <h2>Fülle Deinen Warenkorb</h2>
+                <p>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle Dein Essen</p>
+            </div>
+        </div></div>
+
+    </div>
+
+    <div class="mobile-buttons">
+        <a onclick="openFreeBasket()"><img class="size48" src="./img/basket.svg"></a>
+        <div id="bottom-button"></div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="#">Ein Restaurant empfehlen</a>
+            <a href="#">Ein Restaurant anmelden</a>
+            <a href="#">Jobs</a>
+            <a href="#">AGB</a>
+            <a onclick="renderDatenschutz()">Datenschutzerklärung</a>
+            <a onclick="renderImpressum()">Impressum</a>
+            <a href="#">Verwendung von Cookies</a>
+            <a href="#">Bug Bounty</a>
+            <a href="#">Ethik-Hotline</a>
+        </div>
+        <div>
+            <a href="#">© 2024 Liefero.de</a>
+        </div>
+    </footer>
+</body>
+</html>

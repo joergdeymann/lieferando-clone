@@ -1,0 +1,250 @@
+#window {
+    position: relative;
+}
+
+.about {
+    --bg-color: rgba(250, 250, 240, 0.9);
+    position: fixed;
+    top:0;
+    left: 0; 
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+
+    background-color: rgba(0,0,0,0.1);
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    line-height: 32px;
+    opacity: 0;
+}
+
+.about-animation {
+    transition: 
+    500ms linear;
+}
+
+.opacity-visible {
+    opacity: 1;
+}
+
+.about-background {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+    max-height:90%;
+    max-width:90%;
+    height: 90%;
+    padding-bottom: 16px;
+}
+
+.evaluation-header {
+    background: rgba(48, 61, 63, 0.902);
+    color: rgba(255,255,255,0.9);
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    background: -moz-radial-gradient(circle, rgba(48,61,63,0.95) 29%, rgba(48,61,63,1) 71%);
+    background: -webkit-radial-gradient(circle, rgba(48,61,63,0.95) 29%, rgba(48,63,61,1) 71%);
+    background: radial-gradient(circle, rgba(48,61,63,0.95) 29%, rgba(48,61,63,1) 71%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#303d3d",endColorstr="#303d3d",GradientType=1);    
+}
+
+.evaluation-header>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding-left: 16px;
+    height: 150px;
+}
+
+.evaluation-header .big {
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 32px;
+    padding-left: 32px;
+
+}
+
+.vertical-line {
+    width: 1px;
+    background: rgb(255,255,255,0.3);
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-scroll {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    overflow-y:scroll;
+}
+
+.about-scroll>* {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.about-border {
+    margin: 8px;  
+}
+
+.about-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.about a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(0,0,0,0.9);
+}
+
+.about a:hover {
+    text-decoration: none;
+}
+
+.about-nav a {
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(0,0,0,0.5);
+    padding: 2px 16px;
+    border-radius: 20px;
+    transition: 1000ms ease-out;
+    transition-property:background;
+}
+
+.about-nav a:hover {
+    background-color: rgba(0,0,0,0.1);
+    /* border-radius: 15px; */
+}
+
+.pay-card a {
+    transition: 1000ms ease-out;
+    transition-property:background;
+}
+
+.pay-card a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.evaluation-header a {
+    color: white;
+}
+
+.about-card {
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: var(--bg-color);;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.about-card .flex-space{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-times {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about h1 {
+    height: 32px;
+    padding-top: 16px;
+}
+
+.about h2 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 24px;
+}
+
+.about .about-card h2 {
+    padding: 0px;
+}
+
+.about iframe.googlemaps {
+    display: flex;
+    width: 100%;
+    height: 400px !important;
+    border:0;
+    box-sizing: border-box;
+}
+
+.about p {
+    max-width: 64ch;
+}
+
+.about h2,.about h1,.about-nav {
+    padding-left:16px;
+    padding-right: 16px;
+}
+
+.about h2 {
+    margin-top: 16px;
+}
+
+.about h2 img {
+    height: 32px;
+}
+
+.about .pay-card img {
+    display:flex;
+    justify-content: center;;
+    align-items: center;
+    height: 48px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.about .pay-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 600px;
+}
+.about .noborder {
+    padding:0;
+    margin:0;
+}
+
+.p16 {
+    padding: 16px;
+}
+
+.shop-header {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-left: 0px;
+ }
+ 
+ .shop-header h2 {
+    margin-left: 0;
+ }
+ 
+ .shop-header div {
+    height: unset;
+ }

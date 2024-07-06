@@ -1,0 +1,19 @@
+.hide-menu {
+    animation: hide-menu 500ms ease-out;
+}
+.show-menu {
+    animation: reverse hide-menu 500ms ease-out;
+}
+
+@keyframes hide-menu {
+    from 
+    {
+        opacity: 100%;
+            
+    }
+    to 
+    {
+        opacity: 0;
+    }
+
+}
