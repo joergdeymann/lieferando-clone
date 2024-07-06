@@ -1,19 +1,21 @@
-let userid=0;
-let companyid=0;
-let basketid=0;
+let company = companyList[0];
+let companyId =0;
 
-let article = null;
-let articleList = [];
+let articleList;
+
+/*
+
+let article = articleList[0];
 let articleId =0;
 
-let basket = {}
+let basket = basketList[0];
 let basketList=[];
 let basketId=null;
 
-let company = null;
-let companyList = [];
-let companyId =0;
 
+let customer = customerList[0];
+let customerId =0;
+*/
 function renderLeft() {
     let html =``;
     html += renderCompany();
@@ -41,20 +43,17 @@ function loadCompany() {
 
 
 function initData() {
-    companyList = loadCompany();
-    if (companyList == null) {
-        companyList=[];
-        addAllCompany();  
-        evaluationInit(); 
-        addAllArticle();  
-        addAllCategory();
+    let c = loadCompany();
+    if (c != null) {
+        companyList=c;
+    } else {
+        categorySetAll();
     }
-    
+    customerUse(0); 
+    companyUse(0);
 }
 
 function initBasket() {
-    companyUse(0);   
-    customerUse(0); 
     basketList = loadBasket();
     if (basketList == null) {
         basketList=[];

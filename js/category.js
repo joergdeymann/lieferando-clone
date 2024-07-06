@@ -39,6 +39,19 @@ function categorySetArticleList(c) {
     }
 }
 
+function categorySetAll() {
+    for (c = 0; c < companyList.length; c++) {
+        companyUse(c);
+    
+        for (let i=0;i<articleList.length;i++) {
+            let index = categoryList.findIndex(obj => obj.tag == articleList[i].category);
+            if (index > -1) {
+                categoryList[index].articleIdList.push(i);
+            }
+        }
+    }
+}
+
 function categorySet(id) {
     category=categoryList[id];
     categoryId=id;

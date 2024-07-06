@@ -1,7 +1,3 @@
-let customer = null;
-let customerList = [];
-let customerId =0;
-
 function customerNew() {
     let c = {
         "addressList": [],

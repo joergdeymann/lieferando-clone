@@ -36,7 +36,8 @@ function renderArticleCategoryHeadline() {
     if (img == null || img == "") return "";
 
     let html=/*html*/`
-        <img id="choice${categoryId}" class="article-image" src="${img}">
+        <div class="article-spacer" id="choice${categoryId}"></div>
+        <img class="article-image" src="${img}">
         <h2>${headline}</h2>
 
     `;
@@ -64,13 +65,12 @@ function renderArticleOuterHTML(innerhtml) {
 
 function renderOneArticleImage(img) {
     let htmlImg="";
-    if (img != "") {
-        htmlImg=`
-            <img alt="Article Image" src="${img}">
-        `;
-    }
-    return htmlImg;
+    if (img == null || img == "") return "";
 
+    htmlImg=`
+        <img alt="Article Image" src="${img}">
+    `;
+    return htmlImg;
 }
 
 function renderOneArticle(id) {

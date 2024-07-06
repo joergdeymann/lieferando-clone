@@ -1,3 +1,26 @@
-customerAdd("Jörg Deymann", "Liperring 36", "49733 Haren","+4915117871172");
-customerAdd("Molly Weasly", "Bahnsteig 12 3/4", "32112 Baumhausen","+497564310");
-customerAdd("Harry Potter", "Wankelgasse 5", "99973 Hockwards","+49111222333");
+customerList = [
+    {
+        "addressList": [{
+            "name": "Jörg Deymann",
+            "street": "Liperring 36",
+            "city": "49733 Haren"    
+        }],
+        "tel": "+4915117871172"
+    },
+    {
+        "addressList": [{
+            "name": "Molly Weasly",
+            "street": "Bahnsteig 12 3/4",
+            "city": "32112 Baumhausen"    
+        }],
+        "tel": "+497564310"
+    },
+    {
+        "addressList": [{
+            "name": "Harry Potter",
+            "street": "Wankelgasse 5",
+            "city": "99973 Hockwards"    
+        }],
+        "tel": "+49111222333"
+    }
+]
